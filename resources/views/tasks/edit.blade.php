@@ -8,10 +8,10 @@
         <div class="col-6">
             {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
         
-                <input type="text" class="form-group">
+                <div class="form-group">
                     {!! Form::label('status', 'ステータス:') !!}
                     {!! Form::text('status', null, ['class' => 'form-control']) !!}
-                </input>
+                </divS>
         
                 <div class="form-group">
                     {!! Form::label('content', 'メッセージ:') !!}
